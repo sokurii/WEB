@@ -1,0 +1,29 @@
+.container{
+    /* [1] flexbox 의 시작! 디스플레이 플렉스 만들고 시작하기 */
+    display: flex;
+    /* [2] flex-direction 배치 설정
+    -container에서만 작동함
+    - row(기본값, 한 줄에 쭉), row-reverse, column, column-reverse */
+    flex-direction: row;
+    /* [3] flex-wrap
+    - 컨테이너 크기 줄였을 때 item들 너비 줄어들게 할 건지, 
+      일정하게 유지하고 다음 줄로 흘려 보낼 지
+    - no wrap(기본값), wrap(다음 줄로 이동)*/
+    flex-wrap: wrap;
+    /* [4] justify-content(메인 축 중심으로)
+    - flex-start(기본값), flex-end, flex-center,
+    - space-between, space-around, space-evenly */
+    justify-content: flext-start;
+}
+
+.item{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+
+    margin-top: 10px;
+    margin-right: 20px;
+
+    font-size: 30px;
+
+}
