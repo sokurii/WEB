@@ -1,0 +1,58 @@
+.container{
+    background-color: darkkhaki;
+    height: 300px;
+    display: flex;
+
+    /* align 정렬
+    - 아이템들이 배치되는 축이 메인축이라면,
+    메인축과 수직을 이루는 축이 교차 축
+    - align 정렬은 교차축을 중심으로 정렬을 한다.
+    예를 들어 메인축이 가로로 되어 있다면 교차축은 세로 공간에서 정렬  */
+
+    /* [1] align-items 
+    - stretch(기본값).. 교차축 기준으로 쭉 늘려 준다
+    - flex-start, flex-end, center, baseline(알파벳 쓰는 것 마냥..) */
+    align-items: baseline;
+
+    /* [2] align-content
+    - item들이 여러줄 있을 때 공간을 어떻게 배치할 것인지 
+    - flex-start, flex-end, center, space-between, space-around, space-evenly */
+    align-content: flex-end;
+
+
+    
+}
+
+
+.item{
+    background-color: dodgerblue; 
+    border: 1px solid black;
+    font-size: 20px;
+    margin-right: 5px;
+
+    /* [3] align-self 
+    - 개별 아이템을 교차축 기준으로 정렬 
+    - 해당 속성은 컨테이너에 적용X , 개별 아이템에 각각 적용함
+    - stretch, flex-start, flex-end, center*/
+} 
+
+/* [4] order
+- 아이템들의 순서를 지정해줄 수 있다 */
+.order1{
+    order : 1;
+}  
+.order2{
+    order : 2;
+}  
+.order3{
+    order : 3;
+}  
+
+/* [5] glow , shrink
+- 컨테이너를 늘리거나 줄였을 때 늘리거나 줄어드는 비율 */
+.grow1{
+    flex-grow: 1;
+}
+.grow2{
+    flex-grow: 2;
+}
